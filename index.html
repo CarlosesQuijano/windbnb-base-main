@@ -42,46 +42,60 @@
 
     <article class="d-flex rounded-4">
       <p class="p-3 m-0 cursor-text" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
-      aria-controls="offcanvasTop">Add location</p>
-  
-      
+        aria-controls="offcanvasTop">Add location</p>
 
 
-      <p class="p-3 m-0 border-start border-end border-light-subtle user-select-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
-      aria-controls="offcanvasTop">Add guests</p>
+
+
+      <p class="p-3 m-0 border-start border-end border-light-subtle user-select-none" type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Add guests</p>
       <!-- Icono Search de google Icons -->
-      <p class="material-symbols-outlined text-danger p-3 pointer" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
-      aria-controls="offcanvasTop">
+      <p class="material-symbols-outlined text-danger p-3 pointer" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
         search
-    </p>
-    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasTopLabel"></h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
+      </p>
+      <div class="contenedor2 offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop"
+        aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasTopLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
 
-            <div class="offcanvas-body d-flex">
-            
-              <div class="row g-2">
-                <div class="col-md">
-                  <div class="form-floating">
-                    <input type="text" class="form-control" id="floatingInputGrid">
-                    <label for="floatingInputGrid">LOCATION</label>
-                  </div>
-                </div>
-                
-                  <div class="col-md">
-                    <div class="form-floating">
-                      <input type="text" class="form-control" id="floatingInputGrid">
-                      <label for="floatingInputGrid">Guests</label>
-                    </div>
-                </div>
-              </div>   
-              
+        <div class="offcanvas-body">
+          <!--el primer input-->
+          <div class="texto1 row g-2   ">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="floatingInputGrid">
+              <label for="floatingInputGrid">LOCATION</label>
             </div>
+          </div>
+          <!--el segundo input-->
+          <div class="texto2 row  g-2 ">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="floatingInputGrid">
+              <label for="floatingInputGrid">Guests</label>
+            </div>
+          </div>
+          <div class="botoncito">
+            <button type="button" class=" btn2 btn btn-danger">Buscar</button>
+          </div>
+        </div>
+        <div class="lista">
+          <ul class="list-group">
+            <li class="list-item"><span class="material-symbols-outlined">
+                location_on </span> Helsinki, Finland</li>
+            <li class="list-item"><span class="material-symbols-outlined">
+                location_on
+              </span> Turku, Finland</li>
+            <li class="list-item"><span class="material-symbols-outlined">
+                location_on
+              </span> Oulu, Finland</li>
+            <li class="list-item"><span class="material-symbols-outlined">
+                location_on
+              </span> Vaasa, Finland</li>
+          </ul>
+        </div>
       </div>
-
-
     </article>
   </header>
   <main>

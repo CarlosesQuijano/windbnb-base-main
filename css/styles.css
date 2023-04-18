@@ -56,3 +56,54 @@ aspect-ratio: 3/2;
 .hide{
     display: none;
 }
+.offcanvas-body{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    gap: 10px;
+    
+   
+    
+}
+.texto1{
+    width: 400px;
+    border-radius: 32px;
+}
+.texto2{
+    width: 400px;
+    border-radius: 28px;
+}
+.btn2{
+    height: 50px;
+    border-radius: 20px;
+    width: 150px;
+}
+.form-control{
+    border-radius: 20px;
+}
+.contenedor2{
+    height: 400px !important;
+}
+.lista{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+  
+    width: 200px;
+    position: relative;
+    left: 19em;
+    bottom: 4em;
+}
+.list-item{
+    list-style: none;
+    position: relative;
+    
+    
+    
+}
+
+.list-group{
+    display: flex;
+    justify-content: space-evenly;
+}
