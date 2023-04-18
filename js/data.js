@@ -14,9 +14,26 @@ const getData = async () => {
 }
 
 
+const filtrar = (arr, filtro) => {
+  
+  let filtered = arr.filter( elem => elem.city === filtro)
 
+  return filtered
+};
+
+const filterByName = (arr, filtro) => {
+  
+  let filtered = arr.filter( elem => {
+    return elem.city.toLowerCase().includes(filtro.toLowerCase()) || elem.city.toLowerCase().includes(filtro.toLowerCase())
+  })
+
+  console.log(filtered);
+  return filtered
+}
 
 export default {
   getData,
+  filtrar,
+  filterByName,
   
 } 

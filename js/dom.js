@@ -22,9 +22,24 @@ const newCard = (obj) => {
 return div;
 }
 
+const showCards = (arr) => {
+
+  rooms.innerHTML = '';
+
+  arr.forEach( element => {
+    // Creamos el card con la informacion del elemento
+    const card = newCard(element);
+  
+    // Agregamos el card al elemento products
+    rooms.appendChild(card);
+  })
+}
+
 
 export default {
   newCard,
   $,
+  showCards,
+
  
 }
