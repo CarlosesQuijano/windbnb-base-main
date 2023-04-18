@@ -22,7 +22,9 @@ const newCard = (obj) => {
 return div;
 }
 
+
 export default {
   newCard,
   $,
+ 
 }
