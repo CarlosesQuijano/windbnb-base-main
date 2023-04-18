@@ -13,6 +13,10 @@ const getData = async () => {
   return data;
 }
 
+
+
+
 export default {
-  getData
-}
+  getData,
+  
+} 

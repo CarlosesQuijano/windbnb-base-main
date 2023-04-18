@@ -29,25 +29,30 @@ border-radius: 12px;
     padding-top: 15px;
 }
 .info2{
-    padding-top: 10px;
+    padding-top: 4px;
     font-family: 'Monserrat', sans-serif;
     color: #333333;
 }
 
 .apartment{
-    size: 14px;
+    size: 6px !important;
     font-family: 'Monserrat', sans-serif;
    color: #828282;
    
 }
 .nota{
-    
-width: 32px;
-height: 17px;
 font-family: 'Montserrat';
 font-size: 14px;
 font-weight: bold;
 color: #4F4F4F;
 bottom: 5px;
 position: relative;
+}
+
+.img2{
+aspect-ratio: 3/2;
+}
+
+.hide{
+    display: none;
 }
