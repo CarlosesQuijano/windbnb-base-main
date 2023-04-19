@@ -16,9 +16,9 @@ const getData = async () => {
 
 const filtrar = (arr, filtro) => {
   
-  let filtered = arr.filter( elem => elem.city === filtro)
+let filtered = arr.filter( elem => elem.city === filtro)
 
-  return filtered
+  return filtered;
 };
 
 const filterByName = (arr, filtro) => {
@@ -27,13 +27,20 @@ const filterByName = (arr, filtro) => {
     return elem.city.toLowerCase().includes(filtro.toLowerCase()) || elem.city.toLowerCase().includes(filtro.toLowerCase())
   })
 
-  console.log(filtered);
-  return filtered
+  return filtered;
 }
+
+const filterByNumber = (arr, filtro) => {
+  return arr.filter( elem => filtro <=elem.maxGuests);
+}
+  
+  
+
 
 export default {
   getData,
   filtrar,
   filterByName,
+  filterByNumber,
   
 } 

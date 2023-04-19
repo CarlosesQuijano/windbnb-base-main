@@ -6,7 +6,7 @@ const datos = await data.getData();
 
 const rooms = dom.$("#rooms");
 
-console.log(datos);
+
 
 datos.forEach(element => {
   const card = dom.newCard(element);
@@ -20,6 +20,16 @@ searchProduct.addEventListener('keyup', () => {
   let filtro = searchProduct.value;
 
   const filtered = filtro === '' ? datos : data.filterByName(datos, filtro); 
+
+  dom.showCards(filtered);
+})
+
+const searchProduct2 = dom.$('#floatingInputGrid2');
+
+searchProduct2.addEventListener('keyup', () => {
+  let filtro = searchProduct2.value;
+
+  const filtered = filtro === '' ? datos : data.filterByNumber(datos, filtro); 
 
   dom.showCards(filtered);
 })
